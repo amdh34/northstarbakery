@@ -1,19 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>North Star Bakery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="welcome">
-  <h1>Freshly Baked Daily, Right in Your Neighborhood</h1>
-  <p>
-    Welcome to North Star Bakery! Whether you're grabbing a warm morning pastry on your commute, picking up a signature loaf for family dinner, or planning sweets for your next big event, everything we make is handcrafted with simple, quality ingredients and a whole lot of heart.
-  </p>
-</section>
-“What we’re known for” summary
-Hours and location snippet
-Featured item of the week
+
+    <header>
+        <img src="images/bakery-logo_c.png" alt="North Star Bakery Logo" width="50%">
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <h1>Freshly Baked Daily, Right in Your Neighborhood</h1>
+        <audio controls>
+            <source src="audio/bakery-welcome_c.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>
+        Welcome to North Star Bakery! We use simple ingredients, local grains, and time, because good bread can't be rushed. Stop by and taste the difference or place a pre-order, and we'll have something fresh waiting for you.
+        </p>
+        <img src="images/bakery-storefront_c.png" alt="Storefront of North Star Bakery in Centerville, WY">
+    </header>
+
+    <main>
+        <h2>What We're Known For</h2>
+
+        <div class="card-group">
+            <article class="card">
+                <h3>Handcrafted Artisan Breads</h3>
+                <p>Slow-fermented sourdoughs, golden baguettes, and soft sandwich loaves baked from scratch every morning using simple, wholesome ingredients.</p>
+            </article>
+
+            <article class="card">
+                <h3>Fresh Morning Pastries</h3>
+                <p>Buttery croissants, warm cinnamon rolls, and seasonal fruit danishes made fresh for your early morning run or quick commute.</p>
+            </article>
+
+            <article class="card">
+                <h3>Custom Event Platters</h3>
+                <p>Beautiful dessert spreads, mini pastry boxes, and specialty cakes crafted to make your birthdays, office meetings, and family gatherings easy and sweet.</p>
+            </article>
+        </div>
+
+        <section class="featured-item">
+            <h2>Featured Item of the Week</h2>
+            <h3>Cardamom Cinnamon Knots</h3>
+            <p>
+                Pillowy soft brioche dough layered with warm cinnamon and freshly crushed cardamom, finished with a subtle vanilla bean glaze. Baked fresh in limited quantities every morning this week!
+            </p>
+            <p class="price"><strong>$4.50 each</strong> | <strong>$24 per half-dozen</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-hours">
+            <h4>Hours:</h4>
+            <ul>
+                <li><strong>Mon:</strong> Closed</li>
+                <li><strong>Tue - Fri:</strong> 6:00 AM - 6:00 PM</li>
+                <li><strong>Sat - Sun:</strong> 7:00 AM - 2:00 PM</li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact Us:</h4>
+            <address>482 S. Avenue Street, Centerville, WY 49007</address>
+            <p>(801) 555-0192</p>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/bakery-logo_c.png" alt="North Star Bakery Logo" width="50%">
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <h1>Contact &amp; Pre-Order Requests</h1>
+    <p>Please fill out the form below to submit a general inquiry or place a bakery pre-order.</p>
+    <p>Fields marked with an asterisk (*) are required.</p>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <p class="form-field">
+                <span>* <label for="name">Name:</label></span><br>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="e.g., Jane Doe">
+            </p>
+
+            <p class="form-field">
+                <span>* <label for="email">Email Address:</label></span><br>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inquiry &amp; Order Details</legend>
+
+            <p class="form-field">
+                <span>* <label for="request-type">Request Type:</label></span><br>
+                <select id="request-type" name="request_type" required>
+                    <option value="">-- Select Option --</option>
+                    <option value="preorder">Pre-Order</option>
+                    <option value="general">General Question</option>
+                </select>
+            </p>
+
+            <p class="form-field">
+                <label for="pickup-date">Pickup Date (for Pre-Orders):</label><br>
+                <input type="date" id="pickup-date" name="pickup_date">
+            </p>
+
+            <p class="form-field">
+                <span>* <label for="item-details">Item Details / Message:</label></span><br>
+                <textarea id="item-details" name="item_details" rows="5" cols="40" required minlength="10" maxlength="500" placeholder="List the specific bakery items and quantities you wish to order, or type your question here..."></textarea>
+            </p>
+
+            <p class="form-field">
+                <label for="allergy-notes">Allergy Notes (if applicable):</label><br>
+                <textarea id="allergy-notes" name="allergy_notes" rows="3" cols="40" maxlength="300" placeholder="Please list any dietary restrictions or severe food allergies (e.g., tree nuts, dairy)..."></textarea>
+            </p>
+
+        </fieldset>
+
+        <p class="form-actions">
+            <button type="submit">Submit Request</button>
+            <button type="reset">Reset Form</button>
+        </p>
+
+    </form>
+    </main>
+
+    <footer>
+        <div class="footer-hours">
+            <h4>Hours:</h4>
+            <ul>
+                <li><strong>Mon:</strong> Closed</li>
+                <li><strong>Tue - Fri:</strong> 6:00 AM - 6:00 PM</li>
+                <li><strong>Sat - Sun:</strong> 7:00 AM - 2:00 PM</li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact Us:</h4>
+            <address>482 S. Avenue Street, Centerville, WY 49007</address>
+            <p>(801) 555-0192</p>
+        </div>
+    </footer>
+
+</body>
+</html>
