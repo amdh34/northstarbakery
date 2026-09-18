@@ -109,6 +109,17 @@ h2, h3 {
 
 .card {
     display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    min-width: 250px;
+    padding: 0px 20px;
+    background-color: #f0ebe7;
+    align-items: flex-start; /* remove this if it causes problems */
+    gap: 16px; /* remove this if it causes problems */
+}
+
+.card {
+    display: flex;
     flex-direction: column;
     flex: 1 1 0;
     min-width: 250px;
@@ -118,11 +129,11 @@ h2, h3 {
     gap: 16px; /* remove this if it causes problems */
 }
 
-.card-media {
-    margin: 0;
-    width: 100px;
-    flex-shrink: 0;
-    text-align: center;
+
+@media (min-width: 600px) {
+    .card-wide {
+        grid-column: span 2;
+    }
 }
 
 .card-thumb {
