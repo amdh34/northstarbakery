@@ -109,31 +109,26 @@ h2, h3 {
 
 .card {
     display: flex;
-    flex-direction: row;
-    flex: 1 1 0;
-    min-width: 250px;
-    padding: 0px 20px;
+    flex-direction: column;
+    padding: 16px 20px;
     background-color: #f0ebe7;
-    align-items: flex-start; /* remove this if it causes problems */
-    gap: 16px; /* remove this if it causes problems */
+    gap: 0.5rem;
 }
-
-.card {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 0;
-    min-width: 250px;
-    padding: 0px 20px;
-    background-color: #f0ebe7;
-    align-items: flex-start; /* remove this if it causes problems */
-    gap: 16px; /* remove this if it causes problems */
-}
-
 
 @media (min-width: 500px) {
     .card-wide {
         grid-column: span 2;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 16px;
     }
+}
+
+.card-media {
+    margin: 0;
+    width: 130px;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .card-body {
@@ -142,7 +137,7 @@ h2, h3 {
 
 .card-thumb {
     width: 100%;
-    height: 80px;
+    height: 110px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -183,8 +178,7 @@ h2, h3 {
 }
 
 .product-group .card {
-    flex: 1 1 0;
-    min-width: 220px;
+    min-width: 0;
 }
 
 /* ABOUT */
