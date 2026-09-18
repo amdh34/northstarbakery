@@ -120,7 +120,7 @@ h2, h3 {
 
 .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1 1 0;
     min-width: 250px;
     padding: 0px 20px;
@@ -130,10 +130,14 @@ h2, h3 {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     .card-wide {
         grid-column: span 2;
     }
+}
+
+.card-body {
+    flex: 1;
 }
 
 .card-thumb {
