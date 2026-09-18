@@ -8,6 +8,11 @@
         align-items: center;
         justify-content: space-between;
     }
+    
+    form {
+        width: 50%;
+        max-width: 600px;
+    }
 }
 
 body {
@@ -165,10 +170,13 @@ h2, h3 {
 
 /* CONTACT */
 
+/* CONTACT */
+
 form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
 }
 
 fieldset {
