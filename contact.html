@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>North Star Bakery - Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,7 +26,10 @@
     <main>
     <p>Please fill out the form below to submit a general inquiry or place a bakery pre-order.</p>
     <p>Fields marked with an asterisk (*) are required.</p>
-    <form action="#" method="post">
+
+    <div id="prefill-notice" class="prefill-banner" style="display:none;"></div>
+
+    <form id="contact-form" action="#" method="post" novalidate>
 
         <fieldset>
             <legend>Contact Information</legend>
@@ -94,6 +98,5 @@
             <p>(801) 555-0192</p>
         </div>
     </footer>
-
 </body>
 </html>
